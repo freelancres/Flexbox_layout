@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Align-Items</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Align-Items</h1>
+      <p>
+        Property applied to the parent element (flex-container) to define the
+        behavior of its children (flex-items), causing the flex-items to line up
+        along the defined cross-axis.
+      </p>
+      <hr />
+      <h2>flex-direction:row</h2>
+      <p>main-axis is horizental , cross-axis is vertical</p>
+      <span>Align-Items:stretch WITHOUT defined height:</span>
+
+      <div class="flex-container row align-items-stretch">
+        <div class="flex-item width">1</div>
+        <div class="flex-item width">2</div>
+        <div class="flex-item width">3</div>
+        <div class="flex-item width">4</div>
+      </div>
+
+      <span>Align-Items:stretch WITH defined height:</span>
+      <div class="flex-container row align-items-stretch">
+        <div class="flex-item width height">1</div>
+        <div class="flex-item width height">2</div>
+        <div class="flex-item width height">3</div>
+        <div class="flex-item width height">4</div>
+      </div>
+      <span
+        >Align-Items:stretch with flex-direction:row it streches the flex-items
+        to take the whole height of the flex container, and it doesn't strech to
+        take the width.</span
+      >
+      <span>Align-Items:flex-start :</span>
+      <div class="flex-container row align-items-start">
+        <div class="flex-item width">1</div>
+        <div class="flex-item width">2</div>
+        <div class="flex-item width">3</div>
+        <div class="flex-item width">4</div>
+      </div>
+      <span>Align-Items:center :</span>
+      <div class="flex-container row align-items-center">
+        <div class="flex-item width">1</div>
+        <div class="flex-item width">2</div>
+        <div class="flex-item width">3</div>
+        <div class="flex-item width">4</div>
+      </div>
+      <span>Align-Items:flex-end :</span>
+      <div class="flex-container row align-items-end">
+        <div class="flex-item width">1</div>
+        <div class="flex-item width">2</div>
+        <div class="flex-item width">3</div>
+        <div class="flex-item width">4</div>
+      </div>
+      <span>Align-Items:baseline :</span>
+      <div class="flex-container row align-items-baseline">
+        <div class="flex-item width">1</div>
+        <div class="flex-item width">2</div>
+        <div class="flex-item width">3</div>
+        <div class="flex-item width">4</div>
+      </div>
+      <hr />
+      <h2>flex-direction:column</h2>
+      <p>main-axis is vertical , cross-axis is horizental</p>
+      <span>Align-Items:stretch WITHOUT defined width:</span>
+      <div class="flex-container column align-items-stretch">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+      </div>
+
+      <span>Align-Items:stretch WITH defined width:</span>
+      <div class="flex-container column align-items-stretch">
+        <div class="flex-item width height">1</div>
+        <div class="flex-item width height">2</div>
+        <div class="flex-item width height">3</div>
+        <div class="flex-item width height">4</div>
+      </div>
+      <span
+        >Align-Items:stretch with flex-direction:column it streches the
+        flex-items to take the whole width of the flex container, and it doesn't
+        strech to take the height.</span
+      >
+      <span>Align-Items:flex-start :</span>
+      <div class="flex-container column align-items-start">
+        <div class="flex-item width">1</div>
+        <div class="flex-item width">2</div>
+        <div class="flex-item width">3</div>
+        <div class="flex-item width">4</div>
+      </div>
+      <span>Align-Items:center :</span>
+      <div class="flex-container column align-items-center">
+        <div class="flex-item width">1</div>
+        <div class="flex-item width">2</div>
+        <div class="flex-item width">3</div>
+        <div class="flex-item width">4</div>
+      </div>
+      <span>Align-Items:flex-end :</span>
+      <div class="flex-container column align-items-end">
+        <div class="flex-item width">1</div>
+        <div class="flex-item width">2</div>
+        <div class="flex-item width">3</div>
+        <div class="flex-item width">4</div>
+      </div>
+      <span>Align-Items:baseline :</span>
+      <div class="flex-container column align-items-baseline">
+        <div class="flex-item width">1</div>
+        <div class="flex-item width">2</div>
+        <div class="flex-item width">3</div>
+        <div class="flex-item width">4</div>
+      </div>
+      <hr />
+      <h3>Dummy uncorrect syle:</h3>
+      <div class="flex-container row align-items-baseline">
+        <div class="flex-item a">1</div>
+        <div class="flex-item b">2</div>
+        <div class="flex-item c">3</div>
+        <div class="flex-item d">4</div>
+      </div>
+    </main>
+  </body>
+</html>
